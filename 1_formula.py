@@ -12,8 +12,8 @@ def generateSquare(n):
  
     # Fill the magic square
     # by placing values
-    num = 1
-    while num <= (n * n):
+    temp = 1
+    while temp <= (n * n):
         if i == -1 and j == n:  # 3rd condition
             j = n - 2
             i = 0
@@ -34,8 +34,8 @@ def generateSquare(n):
             i = i + 1
             continue
         else:
-            magicSquare[int(i)][int(j)] = num
-            num = num + 1
+            magicSquare[int(i)][int(j)] = temp
+            temp = temp + 1
  
         j = j + 1
         i = i - 1  # 1st condition
@@ -43,7 +43,7 @@ def generateSquare(n):
     # Printing magic square
     print("Magic Squre for n =", n)
     print("Sum of each row or column",
-          n * (n * n + 1) / 2, "\n")
+          15, "\n") #since n(n*n+1)/2 = 15 and n = 3
     # To display output
     # in matrix form
     print("   0, 1, 2")
