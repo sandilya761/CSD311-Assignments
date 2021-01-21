@@ -40,7 +40,9 @@ def generateSquare(n):
         i = i - 1  
  
     # Printing magic square
+    print("sum of any magic square for any n is n(n*n + 1)/2 ")
     print("Magic Squre for n=3 whose sum is 15 in each row and column")#since n(n*n+1)/2 = 15 and n = 3
+   
     
     print("   0, 1, 2")
     for count, row in enumerate(magicSquare):
