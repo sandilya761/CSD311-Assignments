@@ -1,3 +1,11 @@
+#ALGORITHM USED FOR GENERATING A MAGIC SQUARE USING FORMULA IS AS FOLLOWS:
+#Step 1: Start in the middle of the top row, and let n=1
+#Step 2: Insert n into the current grid position;
+#Step 3: If n=N2 the grid is complete so stop. Otherwise increment n
+#Step 4: Move diagonally up and right, wrapping to the first column or last row if the move leads outside the grid. If this cell is already filled, move vertically down one space instead.
+#Step 5: Return to step 2.
+
+
 def generateSquare(n):
  
     # initially all the grids are set to 0
